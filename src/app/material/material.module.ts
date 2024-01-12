@@ -11,10 +11,13 @@ import {MatCardModule} from "@angular/material/card";
 import {MatChipsModule} from "@angular/material/chips";
 import {MatGridListModule} from "@angular/material/grid-list";
 import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
+import {MatAutocompleteModule} from "@angular/material/autocomplete";
+import {MatOptionModule} from "@angular/material/core";
 
 
 @NgModule({
   exports: [
+    MatAutocompleteModule,
     MatButtonModule,
     MatCardModule,
     MatChipsModule,
@@ -24,6 +27,7 @@ import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
     MatIconModule,
     MatInputModule,
     MatListModule,
+    MatOptionModule,
     MatSidenavModule,
     MatProgressSpinnerModule,
     MatToolbarModule
