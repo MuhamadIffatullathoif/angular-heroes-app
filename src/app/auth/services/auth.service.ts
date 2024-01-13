@@ -26,4 +26,9 @@ export class AuthService {
         tap((user: User) => localStorage.setItem("token",user.id.toString()))
       );
   }
+
+  logout(): void {
+    this.user = undefined;
+    localStorage.clear();
+  }
 }
